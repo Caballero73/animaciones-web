@@ -60,26 +60,70 @@ ESTILOS CONTENIDO: index_cont.css;
 	}
 
 #index_cont #cohete {
-		-webkit-animation-name: cohete;
-		        animation-name: cohete;
 		-webkit-animation-duration: 5s;
 		        animation-duration: 5s;
 		-webkit-animation-fill-mode: forwards;
 		        animation-fill-mode: forwards;
-		left: 45%;
+		-webkit-animation-name: cohete;
+		        animation-name: cohete;
 		height: 250px;
 		height: 25rem;
-		width: auto;
+		left: 50%;
 		position: absolute;
+		-webkit-transform: translateX(-50%);
+		    -ms-transform: translateX(-50%);
+		        transform: translateX(-50%);
+		width: 130px;
+		width: 13rem;
 		z-index: 6;
+
+	}
+
+#index_cont #cohete #cohete-cont {
+			position: relative;			
+		}
+
+#index_cont #cohete #cohete-cont #nave {
+			height: 250px;
+			height: 25rem;
+			width: auto;
+			position: absolute;
+			z-index: 7;			
+			}
+
+#index_cont #cohete #cohete-cont #llama {
+			-webkit-animation: 5s llama;
+			        animation: 5s llama;
+			-webkit-animation-fill-mode: forwards;
+			        animation-fill-mode: forwards;
+			bottom: -265px;
+			bottom: -26.5rem;			
+			height: auto;
+			position: absolute;
+			width: 27px;
+			width: 2.7rem;
+			z-index: 6;
+			-webkit-transition: 0s linear;
+			-o-transition: 0s linear;
+			transition: 0s linear;
+			}
+
+#index_cont #llama {
+		left: 50%;
+		position: absolute;
+		-webkit-transform: translateX(-50%);
+		    -ms-transform: translateX(-50%);
+		        transform: translateX(-50%);
+		z-index: 7;
+
 	}
 
 #index_cont .estrellas {
 		-webkit-animation: 1s estrellas infinite;
 		        animation: 1s estrellas infinite;
-		height: auto;
+		height: 85vh;
 		position: absolute;
-		width: 100%;
+		width: auto;
 		z-index: 1;
 	}
 
@@ -89,8 +133,10 @@ ESTILOS CONTENIDO: index_cont.css;
 		}
 
 #index_cont #planeta {
-		-webkit-animation: 180s movimiento2 infinite linear;
-		        animation: 180s movimiento2 infinite linear;
+		-webkit-animation: 180s movimiento2 linear;
+		        animation: 180s movimiento2 linear;
+		-webkit-animation-fill-mode: forwards;
+		        animation-fill-mode: forwards;
 		height: 850px;
 		height: 85rem;
 		width: auto;
@@ -110,6 +156,20 @@ ESTILOS CONTENIDO: index_cont.css;
 			width: 100px;
 			width: 10rem;
 		}
+
+#index_cont .superh1 {
+		-webkit-animation-name: superh1;
+		        animation-name: superh1;
+		-webkit-animation-direction: alternate;
+		        animation-direction: alternate;
+		-webkit-animation-duration: 60s;
+		        animation-duration: 60s;
+		-webkit-animation-iteration-count: infinite;
+		        animation-iteration-count: infinite;
+		color: #f1f1f1;
+		font-size: calc(2.55814rem + 5.81395vw);
+		margin-top: 5vh;
+	}
 
 /* /.ESTILOS CONTENIDO */
 
@@ -1678,6 +1738,66 @@ KEYFRAMES: keyframes.css;
 	}
 }
 
+@-webkit-keyframes llama {
+	0% {
+		opacity: .8;
+	}
+	12.5% {
+		opacity: 1;	
+	}
+	25% {
+		opacity: .5;
+	}
+	37.5% {
+		opacity: 1;	
+	}
+	50% {
+		opacity: .6;
+	}
+	62.5% {
+		opacity: 1;	
+	}
+	75% {
+		opacity: .8;
+	}
+	87.5% {
+		opacity: .5;	
+	}
+	100% {
+		opacity: 0;
+	}
+}
+
+@keyframes llama {
+	0% {
+		opacity: .8;
+	}
+	12.5% {
+		opacity: 1;	
+	}
+	25% {
+		opacity: .5;
+	}
+	37.5% {
+		opacity: 1;	
+	}
+	50% {
+		opacity: .6;
+	}
+	62.5% {
+		opacity: 1;	
+	}
+	75% {
+		opacity: .8;
+	}
+	87.5% {
+		opacity: .5;	
+	}
+	100% {
+		opacity: 0;
+	}
+}
+
 @-webkit-keyframes movimiento1 {
 	0% {
 		left: calc(100% + 20rem);
@@ -1886,6 +2006,24 @@ KEYFRAMES: keyframes.css;
 	}
 }
 
+@-webkit-keyframes superh1 {
+	0% {
+		opacity: 0;		
+	}
+	100% {
+		opacity: 0.2;		
+	}
+}
+
+@keyframes superh1 {
+	0% {
+		opacity: 0;		
+	}
+	100% {
+		opacity: 0.2;		
+	}
+}
+
 @-webkit-keyframes texto {
 	0% {
 		opacity: 0;		
@@ -2052,6 +2190,11 @@ MEDIA-QUERIES
 
 @media screen and (min-width: 1280px) {
 
+	#index_cont .superh1 {
+		font-size: 100px;
+		font-size: 10rem;
+	}
+
 	body {
 		font-size: 18px;
 		font-size: 1.8rem;
@@ -2069,6 +2212,11 @@ MEDIA-QUERIES
 }
 
 @media screen and (max-width: 420px) {
+
+	#index_cont .superh1 {
+		font-size: 50px;
+		font-size: 5rem;
+	}
 
 	body {
 		font-size: 15px;

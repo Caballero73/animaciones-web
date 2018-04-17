@@ -18,21 +18,51 @@ ESTILOS CONTENIDO: index_cont.css;
 		z-index: 5;
 	}
 	& #cohete {
-		animation-name: cohete;
 		animation-duration: 5s;
 		animation-fill-mode: forwards;
-		left: 45%;
+		animation-name: cohete;
 		height: 25rem;
-		width: auto;
+		left: 50%;
 		position: absolute;
+		transform: translateX(-50%);
+		width: 13rem;
 		z-index: 6;
+
+		& #cohete-cont {
+			position: relative;
+
+			& #nave {
+			height: 25rem;
+			width: auto;
+			position: absolute;
+			z-index: 7;			
+			}
+			& #llama {
+			animation: 5s llama;
+			animation-fill-mode: forwards;
+			bottom: -26.5rem;			
+			height: auto;
+			position: absolute;
+			width: 2.7rem;
+			z-index: 6;
+			transition: 0s linear;
+			}			
+		}
+
+	}
+	#llama {
+		left: 50%;
+		position: absolute;
+		transform: translateX(-50%);
+		z-index: 7;
+
 	}
 
 	& .estrellas {
 		animation: 1s estrellas infinite;
-		height: auto;
+		height: 85vh;
 		position: absolute;
-		width: 100%;
+		width: auto;
 		z-index: 1;
 
 		&.b {
@@ -41,7 +71,8 @@ ESTILOS CONTENIDO: index_cont.css;
 	}
 
 	& #planeta {
-		animation: 180s movimiento2 infinite linear;
+		animation: 180s movimiento2 linear;
+		animation-fill-mode: forwards;
 		height: 85rem;
 		width: auto;
 		position: absolute;
@@ -59,8 +90,15 @@ ESTILOS CONTENIDO: index_cont.css;
 		}
 	}
 
-	
-
+	.superh1 {
+		animation-name: superh1;
+		animation-direction: alternate;
+		animation-duration: 60s;
+		animation-iteration-count: infinite;
+		color: var(--white-color);
+		font-size: responsive 5rem 10rem;
+		margin-top: 5vh;
+	}
 }
 
 /* /.ESTILOS CONTENIDO */
