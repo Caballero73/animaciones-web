@@ -1,0 +1,66 @@
+/******************************
+ESTILOS CONTENIDO: index_cont.css;
+*******************************/
+#index_cont {
+	& .contenedor {
+		background-color: #1b2a3a;
+		display: flex;
+		justify-content: center;
+		height: 89vh;
+		width: 100%;
+		position: relative;
+		overflow: hidden;
+	}
+
+	& #asteroide {
+		bottom: -81%;
+		position: absolute;
+		z-index: 5;
+	}
+	& #cohete {
+		animation-name: cohete;
+		animation-duration: 5s;
+		animation-fill-mode: forwards;
+		left: 45%;
+		height: 25rem;
+		width: auto;
+		position: absolute;
+		z-index: 6;
+	}
+
+	& .estrellas {
+		animation: 1s estrellas infinite;
+		height: auto;
+		position: absolute;
+		width: 100%;
+		z-index: 1;
+
+		&.b {
+			animation-delay: .6s;
+		}
+	}
+
+	& #planeta {
+		animation: 180s movimiento2 infinite linear;
+		height: 85rem;
+		width: auto;
+		position: absolute;
+		z-index: 2;
+	}
+
+	& #satelite {
+		animation: 40s movimiento1 infinite linear;
+		position: absolute;
+		z-index: 3;
+
+		& img {
+			height: auto;
+			width: 10rem;
+		}
+	}
+
+	
+
+}
+
+/* /.ESTILOS CONTENIDO */
