@@ -14,7 +14,7 @@ var browserSync = require('browser-sync').create()
 gulp.task('serve', function () {
   browserSync.init({
     server: {
-      baseDir: './dist'
+      baseDir: './docs'
     }
   })
 })
@@ -32,7 +32,7 @@ gulp.task('css', function () {
   ]
   return gulp.src('./src/css/app.min.css')
     .pipe(postcss(processors))
-    .pipe(gulp.dest('./dist/assets/css'))
+    .pipe(gulp.dest('./docs/assets/css'))
     .pipe(browserSync.stream())
 })
 
@@ -43,7 +43,7 @@ gulp.task('fileinclude', function() {
       prefix: '@',
       basepath: './src'
     }))
-    .pipe(gulp.dest('./dist'));
+    .pipe(gulp.dest('./docs'));
 });
 
 
