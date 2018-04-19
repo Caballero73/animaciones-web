@@ -1,7 +1,7 @@
-# Frontend Desing con Boostrap 4 y PostCSS
+# Animaciones Web
 ## Ejercicio
 
-La idea de este ejercicio es que aprendamos a trabajar con uno de los frameworks (entorno de trabajo o marco de trabajo) para el diseño frontend (interfaz) más utilizados en la industria actualmente, como lo es Foundation.
+Las animaciones CSS3 permiten animar la transición entre un estilo CSS y otro. Las animaciones constan de dos componentes: un estilo que describe la animación CSS y un conjunto de fotogramas que indican su estado inicial y final, así como posibles puntos intermedios en la misma. Este ejercicio busca reforzara a tarvés de la prática estos conocimientos fundamentales. 
 
 ### Herramientas utilizadas
 * HTML5
