@@ -30,8 +30,58 @@ ESTILOS FOOTER: footer.css;
 	padding: 1rem 0 .5rem 0;
 	position: fixed;
 	width: 100%;
-	line-height: 1	
+	line-height: 1;	
 }
+
+#footer a {
+		text-decoration: none;
+	}
+
+#footer .autor {
+		font-size: calc(0.75581rem + 0.5814vw);
+		font-family: 'ubuntu_reg', sans-serif;
+	}
+
+#footer #footer-social {
+			display: -webkit-box;
+			display: -ms-flexbox;
+			display: flex;
+			-webkit-box-pack: center;
+			    -ms-flex-pack: center;
+			        justify-content: center;
+	}
+
+#footer #footer-social .iconos {
+			display: -webkit-box;
+			display: -ms-flexbox;
+			display: flex;
+			border-radius: 50%;
+			-webkit-box-align: center;
+			    -ms-flex-align: center;
+			        align-items: center;
+			-webkit-box-pack: center;
+			    -ms-flex-pack: center;
+			        justify-content: center;
+			margin: 10px;
+			margin: 1rem;
+			height: 37px;
+			height: 3.7rem;
+			width: 37px;
+			width: 3.7rem;
+			cursor: pointer;
+			-webkit-transition: all .35s ease;
+			-o-transition: all .35s ease;
+			transition: all .35s ease;
+		}
+
+#footer #footer-social .iconos:hover {
+				color: #f1f1f1;
+				background-color: #FF853E;
+				-webkit-transition: all .35s ease;
+				-o-transition: all .35s ease;
+				transition: all .35s ease;
+
+			}
 
 /* /.ESTILOS FOOTER */
 
@@ -49,7 +99,7 @@ ESTILOS CONTENIDO: index_cont.css;
 		        justify-content: center;
 		height: 89vh;
 		width: 100%;
-		position: relative;
+		position: fixed;
 		overflow: hidden;
 	}
 
@@ -75,47 +125,126 @@ ESTILOS CONTENIDO: index_cont.css;
 		        transform: translateX(-50%);
 		width: 130px;
 		width: 13rem;
-		z-index: 6;
-
+		z-index: 7;
 	}
 
 #index_cont #cohete #cohete-cont {
 			position: relative;			
 		}
 
+#index_cont #cohete #cohete-cont #compuerta {
+				-webkit-animation: 3s compuerta;
+				        animation: 3s compuerta;
+				-webkit-animation-delay: 7s;
+				        animation-delay: 7s;
+				-webkit-animation-fill-mode: forwards;
+				        animation-fill-mode: forwards;
+				left: 50%;
+				position: absolute;
+				-webkit-transform: translateX(-50%);
+				    -ms-transform: translateX(-50%);
+				        transform: translateX(-50%);
+				top: 170px;
+				top: 17rem;
+				width: 0;
+				z-index: 8;
+			}
+
+#index_cont #cohete #cohete-cont #astronauta {
+				-webkit-animation-name: astronauta;
+				        animation-name: astronauta;
+				-webkit-animation-duration: 9.5s;
+				        animation-duration: 9.5s;
+				-webkit-animation-delay: 12s;
+				        animation-delay: 12s;
+				-webkit-animation-timing-function: steps(19);
+				        animation-timing-function: steps(19);
+				-webkit-animation-fill-mode: forwards;
+				        animation-fill-mode: forwards;
+				background-image: url('../img/astronauta.svg');
+				background-size: cover;
+				height: 30px;
+				height: 3rem;
+				width: 30px;
+				width: 3rem;
+				left: 50%;
+				-webkit-transform: translateX(-50%);
+				    -ms-transform: translateX(-50%);
+				        transform: translateX(-50%);
+				opacity: 0;
+				position: absolute;
+				top: 170px;
+				top: 17rem;
+				z-index: 10;
+			}
+
+#index_cont #cohete #cohete-cont #escalera {
+				-webkit-animation: 3s escalera;
+				        animation: 3s escalera;
+				-webkit-animation-delay: 10s;
+				        animation-delay: 10s;
+				-webkit-animation-fill-mode: forwards;
+				        animation-fill-mode: forwards;
+				background-image: url('../img/bg-escalera.svg');
+				height: 0px;
+				height: 0rem;
+				width: 26px;
+				width: 2.6rem;
+				left: 50%;
+				-webkit-transform: translateX(-50%);
+				    -ms-transform: translateX(-50%);
+				        transform: translateX(-50%);
+				position: absolute;
+				top: 200px;
+				top: 20rem;
+				z-index: 9;
+			}
+
 #index_cont #cohete #cohete-cont #nave {
-			height: 250px;
-			height: 25rem;
-			width: auto;
-			position: absolute;
-			z-index: 7;			
+				height: 250px;
+				height: 25rem;
+				width: auto;
+				position: absolute;
+				z-index: 7;			
 			}
 
 #index_cont #cohete #cohete-cont #llama {
-			-webkit-animation: 5s llama;
-			        animation: 5s llama;
-			-webkit-animation-fill-mode: forwards;
-			        animation-fill-mode: forwards;
-			bottom: -265px;
-			bottom: -26.5rem;			
-			height: auto;
-			position: absolute;
-			width: 27px;
-			width: 2.7rem;
-			z-index: 6;
-			-webkit-transition: 0s linear;
-			-o-transition: 0s linear;
-			transition: 0s linear;
+				-webkit-animation: 5s llama;
+				        animation: 5s llama;
+				-webkit-animation-fill-mode: forwards;
+				        animation-fill-mode: forwards;
+				bottom: -265px;
+				bottom: -26.5rem;
+				left: 50%;
+				-webkit-transform: translateX(-50%);
+				    -ms-transform: translateX(-50%);
+				        transform: translateX(-50%);			
+				height: auto;
+				width: 27px;
+				width: 2.7rem;
+				position: absolute;
+				z-index: 6;
 			}
 
-#index_cont #llama {
-		left: 50%;
+#index_cont #cometa {
+		-webkit-animation-name: cometa;
+		        animation-name: cometa;
+		-webkit-animation-delay: 27s;
+		        animation-delay: 27s;
+		-webkit-animation-duration: 1.5s;
+		        animation-duration: 1.5s;
+		-webkit-animation-fill-mode: forwards;
+		        animation-fill-mode: forwards;
+		-webkit-animation-iteration-count: 1;
+		        animation-iteration-count: 1;
+		-webkit-animation-timing-function: linear;
+		        animation-timing-function: linear;
+		top: -50px;
+		top: -5rem;
+		left: -50px;
+		left: -5rem;
 		position: absolute;
-		-webkit-transform: translateX(-50%);
-		    -ms-transform: translateX(-50%);
-		        transform: translateX(-50%);
-		z-index: 7;
-
+		z-index: 3;
 	}
 
 #index_cont .estrellas {
@@ -1534,6 +1663,50 @@ ESTILOS CONTENIDO TRANSFORMACIONES: trasformaciones_cont.css;
 KEYFRAMES: keyframes.css;
 *******************************/
 
+@-webkit-keyframes astronauta {
+	0% {
+		background-position: 0 0;
+		opacity: 0;
+	}
+	5% {
+		-webkit-transform: translate(-50%,0);
+		        transform: translate(-50%,0);
+		opacity: 1;
+	}
+	90% {
+		-webkit-transform: translate(-50%,9rem);
+		        transform: translate(-50%,9rem);
+	}
+	100% {
+		background-position: -570px 0;
+		-webkit-transform: translate(-50%,9rem);
+		        transform: translate(-50%,9rem);
+		opacity: 1;
+	}
+}
+
+@keyframes astronauta {
+	0% {
+		background-position: 0 0;
+		opacity: 0;
+	}
+	5% {
+		-webkit-transform: translate(-50%,0);
+		        transform: translate(-50%,0);
+		opacity: 1;
+	}
+	90% {
+		-webkit-transform: translate(-50%,9rem);
+		        transform: translate(-50%,9rem);
+	}
+	100% {
+		background-position: -570px 0;
+		-webkit-transform: translate(-50%,9rem);
+		        transform: translate(-50%,9rem);
+		opacity: 1;
+	}
+}
+
 @-webkit-keyframes balon {
 	0% {
 		left: 0;
@@ -1612,21 +1785,67 @@ KEYFRAMES: keyframes.css;
 
 @-webkit-keyframes cohete {
 	0% {
-		top: -350px;
-		top: -35rem;
+		bottom: 120vh;
 	}
 	100% {
-		top: 52vh;
+		bottom: 10vh;
 	}
 }
 
 @keyframes cohete {
 	0% {
-		top: -350px;
-		top: -35rem;
+		bottom: 120vh;
 	}
 	100% {
-		top: 52vh;
+		bottom: 10vh;
+	}
+}
+
+@-webkit-keyframes cometa {
+	0% {
+		top: -50px;
+		top: -5rem;
+		left: -50px;
+		left: -5rem;
+	}
+	100% {
+		top: 1000px;
+		top: 100rem;
+		left: 50%;
+	}
+}
+
+@keyframes cometa {
+	0% {
+		top: -50px;
+		top: -5rem;
+		left: -50px;
+		left: -5rem;
+	}
+	100% {
+		top: 1000px;
+		top: 100rem;
+		left: 50%;
+	}
+}
+
+@-webkit-keyframes compuerta {
+	0% {
+		width: 0;
+	}
+	100% {
+		width: 40px;
+		width: 4rem;
+	}
+}
+
+@keyframes compuerta {
+	0% {
+		width: 0;
+	}
+	100% {
+		width: 40px;
+		width: 4rem;
 	}
 }
 
@@ -1649,6 +1868,26 @@ KEYFRAMES: keyframes.css;
 	100% {
 		-webkit-transform: translateY(-2rem);
 		        transform: translateY(-2rem);
+	}
+}
+
+@-webkit-keyframes escalera {
+	0% {
+		height: 0;
+	}
+	100% {
+		height: 60px;
+		height: 6rem;
+	}
+}
+
+@keyframes escalera {
+	0% {
+		height: 0;
+	}
+	100% {
+		height: 60px;
+		height: 6rem;
 	}
 }
 
@@ -2011,7 +2250,7 @@ KEYFRAMES: keyframes.css;
 		opacity: 0;		
 	}
 	100% {
-		opacity: 0.2;		
+		opacity: 0.3;		
 	}
 }
 
@@ -2020,7 +2259,7 @@ KEYFRAMES: keyframes.css;
 		opacity: 0;		
 	}
 	100% {
-		opacity: 0.2;		
+		opacity: 0.3;		
 	}
 }
 
@@ -2083,7 +2322,7 @@ ESTILOS GENERALES: general.css;
 *******************************/
 
 html {
-  font-size: 10px; 
+  font-size: 10px;
 }
 
 body {
@@ -2159,7 +2398,7 @@ pre {
   padding: 0
 }
 
-#logo {
+#logo-nav {
   font-family: 'ubuntu_reg', sans-serif;
   font-size: 25px;
   font-size: 2.5rem;
@@ -2190,6 +2429,11 @@ MEDIA-QUERIES
 
 @media screen and (min-width: 1280px) {
 
+	#footer .autor {
+		font-size: 15px;
+		font-size: 1.5rem;
+	}
+
 	#index_cont .superh1 {
 		font-size: 100px;
 		font-size: 10rem;
@@ -2213,6 +2457,11 @@ MEDIA-QUERIES
 
 @media screen and (max-width: 420px) {
 
+	#footer .autor {
+		font-size: 10px;
+		font-size: 1rem;
+	}
+
 	#index_cont .superh1 {
 		font-size: 50px;
 		font-size: 5rem;
@@ -2233,3 +2482,116 @@ MEDIA-QUERIES
 		font-size: 1.4rem;
 	}
 }
+
+@media (min-width: 0px) and (max-width: 330px) {
+
+#index_cont #asteroide {
+			bottom: -70%;
+			width: 500px;
+			width: 50rem
+	}
+  @-webkit-keyframes cohete {
+  	0% {
+  		bottom: 120vh;
+  	}
+  	100% {
+  		bottom: 25vh;
+  	}
+	}
+  @keyframes cohete {
+  	0% {
+  		bottom: 120vh;
+  	}
+  	100% {
+  		bottom: 25vh;
+  	}
+	}		  
+		}
+
+@media (min-width: 331px) and (max-width: 544px) {
+
+#index_cont #asteroide {
+			bottom: -70%;
+			width: 600px;
+			width: 60rem
+	}
+
+#index_cont #planeta {
+		  height: 500px;
+		  height: 50rem
+	}		  
+		}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+
+#index_cont #asteroide {
+		  bottom: -96%;
+			width: 710px;
+			width: 71rem
+	}
+
+#index_cont #planeta {
+		  height: 650px;
+		  height: 65rem
+	}
+  @-webkit-keyframes cohete {
+  	0% {
+  		bottom: 120vh;
+  	}
+  	100% {
+  		bottom: 25vh;
+  	}
+	}
+  @keyframes cohete {
+  	0% {
+  		bottom: 120vh;
+  	}
+  	100% {
+  		bottom: 25vh;
+  	}
+	}
+		}
+
+@media (min-width: 1025px) and (max-width: 1290px) {
+
+#index_cont #asteroide {
+		  bottom: -92%;
+			width: 750px;
+			width: 75rem
+	}
+
+#index_cont #planeta {
+		  height: 650px;
+		  height: 65rem
+	}
+  @-webkit-keyframes cohete {
+  	0% {
+  		bottom: 120vh;
+  	}
+  	100% {
+  		bottom: 15vh;
+  	}
+	}
+  @keyframes cohete {
+  	0% {
+  		bottom: 120vh;
+  	}
+  	100% {
+  		bottom: 15vh;
+  	}
+	}
+		}
+
+@media (min-width: 1291px) and (max-width: 1420px) {
+
+#index_cont #asteroide {
+		  bottom: -92%;
+			width: 790px;
+			width: 79rem
+	}
+
+#index_cont #planeta {
+		  height: 750px;
+		  height: 75rem
+	}
+		}
