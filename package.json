@@ -8,14 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Caballero73/xxx"
+    "url": "git+https://github.com/Caballero73/animacion-w"
   },
   "author": "Enrique Valerio",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Caballero73/xxx/issues"
+    "url": "https://github.com/Caballero73/animacion-w/issues"
   },
-  "homepage": "https://github.com/Caballero73/xxx#readme",
+  "homepage": "https://github.com/Caballero73/animacion-w#readme",
   "devDependencies": {
     "autoprefixer": "^7.2.4",
     "browser-sync": "^2.23.6",
