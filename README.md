@@ -1,7 +1,7 @@
 # Animaciones Web
 ## Ejercicio
 
-Las animaciones CSS3 permiten animar la transición entre un estilo CSS y otro. Las animaciones constan de dos componentes: un estilo que describe la animación CSS y un conjunto de fotogramas que indican su estado inicial y final, así como posibles puntos intermedios en la misma. Este ejercicio busca reforzara a tarvés de la prática estos conocimientos fundamentales. 
+Las animaciones CSS3 permiten animar la transición entre un estilo CSS y otro. Las animaciones constan de dos componentes: un estilo que describe la animación CSS y un conjunto de fotogramas que indican su estado inicial y final, así como posibles puntos intermedios en la misma. Este ejercicio busca reforzar a través de la prática estos conocimientos fundamentales.
 
 ### Herramientas utilizadas
 * HTML5
