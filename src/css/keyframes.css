@@ -1,6 +1,24 @@
 /******************************
 KEYFRAMES: keyframes.css;
 *******************************/
+@keyframes astronauta {
+	0% {
+		background-position: 0 0;
+		opacity: 0;
+	}
+	5% {
+		transform: translate(-50%,0);
+		opacity: 1;
+	}
+	90% {
+		transform: translate(-50%,9rem);
+	}
+	100% {
+		background-position: -570px 0;
+		transform: translate(-50%,9rem);
+		opacity: 1;
+	}
+}
 @keyframes balon {
 	0% {
 		left: 0;
@@ -35,10 +53,58 @@ KEYFRAMES: keyframes.css;
 }
 @keyframes cohete {
 	0% {
-		top: -35rem;
+		bottom: 120vh;
 	}
 	100% {
-		top: 52vh;
+		bottom: 10vh;
+	}
+}
+@media (--mobile-s) {
+  @keyframes cohete {
+  	0% {
+  		bottom: 120vh;
+  	}
+  	100% {
+  		bottom: 25vh;
+  	}
+	}
+}
+@media (--tablet-h) {
+  @keyframes cohete {
+  	0% {
+  		bottom: 120vh;
+  	}
+  	100% {
+  		bottom: 25vh;
+  	}
+	}
+}
+@media (--laptop-s) {
+  @keyframes cohete {
+  	0% {
+  		bottom: 120vh;
+  	}
+  	100% {
+  		bottom: 15vh;
+  	}
+	}
+}
+@keyframes cometa {
+	0% {
+		top: -5rem;
+		left: -5rem;
+	}
+	100% {
+		top: 100rem;
+		left: 50%;
+	}
+}
+@keyframes compuerta {
+	0% {
+		width: 0;
+	}
+	100% {
+		width: 4rem;
 	}
 }
 @keyframes disminuir {
@@ -47,6 +113,14 @@ KEYFRAMES: keyframes.css;
 	}
 	100% {
 		transform: translateY(-2rem);
+	}
+}
+@keyframes escalera {
+	0% {
+		height: 0;
+	}
+	100% {
+		height: 6rem;
 	}
 }
 @keyframes estrellas {
@@ -201,7 +275,7 @@ KEYFRAMES: keyframes.css;
 		opacity: 0;		
 	}
 	100% {
-		opacity: 0.2;		
+		opacity: 0.3;		
 	}
 }
 @keyframes texto {
