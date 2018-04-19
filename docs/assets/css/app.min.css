@@ -38,7 +38,7 @@ ESTILOS FOOTER: footer.css;
 	}
 
 #footer .autor {
-		font-size: calc(0.75581rem + 0.93023vw);
+		font-size: calc(0.75581rem + 0.5814vw);
 		font-family: 'ubuntu_reg', sans-serif;
 	}
 
@@ -52,35 +52,37 @@ ESTILOS FOOTER: footer.css;
 	}
 
 #footer #footer-social .iconos {
+			border-radius: 50%;
+			cursor: pointer;
 			display: -webkit-box;
 			display: -ms-flexbox;
 			display: flex;
-			border-radius: 50%;
 			-webkit-box-align: center;
 			    -ms-flex-align: center;
 			        align-items: center;
 			-webkit-box-pack: center;
 			    -ms-flex-pack: center;
 			        justify-content: center;
-			margin: 10px;
-			margin: 1rem;
 			height: 37px;
 			height: 3.7rem;
+			margin: 10px;
+			margin: 1rem;
+			-webkit-transition: 2s;
+			-o-transition: 2s;
+			transition: 2s;
 			width: 37px;
 			width: 3.7rem;
-			cursor: pointer;
-			-webkit-transition: all .35s ease;
-			-o-transition: all .35s ease;
-			transition: all .35s ease;
 		}
 
 #footer #footer-social .iconos:hover {
-				color: #f1f1f1;
 				background-color: #FF853E;
-				-webkit-transition: all .35s ease;
-				-o-transition: all .35s ease;
-				transition: all .35s ease;
-
+				color: #f1f1f1;
+				-webkit-transform: rotate(1turn);
+				    -ms-transform: rotate(1turn);
+				        transform: rotate(1turn);
+				-webkit-transition: 2s;
+				-o-transition: 2s;
+				transition: 2s;
 			}
 
 /* /.ESTILOS FOOTER */
@@ -296,7 +298,7 @@ ESTILOS CONTENIDO: index_cont.css;
 		-webkit-animation-iteration-count: infinite;
 		        animation-iteration-count: infinite;
 		color: #f1f1f1;
-		font-size: calc(2.55814rem + 9.30233vw);
+		font-size: calc(2.55814rem + 5.81395vw);
 		margin-top: 5vh;
 	}
 
