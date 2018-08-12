@@ -38,7 +38,7 @@ ESTILOS FOOTER: footer.css;
 	}
 
 #footer .autor {
-		font-size: calc(0.75581rem + 0.5814vw);
+		font-size: calc(0.75581rem + 0.93023vw);
 		font-family: 'ubuntu_reg', sans-serif;
 	}
 
@@ -298,7 +298,7 @@ ESTILOS CONTENIDO: index_cont.css;
 		-webkit-animation-iteration-count: infinite;
 		        animation-iteration-count: infinite;
 		color: #f1f1f1;
-		font-size: calc(2.55814rem + 5.81395vw);
+		font-size: calc(2.55814rem + 9.30233vw);
 		margin-top: 5vh;
 	}
 
