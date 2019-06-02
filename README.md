@@ -23,4 +23,5 @@ Las animaciones CSS3 permiten animar la transición entre un estilo CSS y otro. 
 	- csswring: Es un minificador de CSS para PostCSS. Es importante que vaya al último para que no tenga conflictos.   
 
 ### Equipo
-* [Enrique J. Valerio G. (Cursante)](https://github.com/Caballero73 "Enrique Valerio - Cursante")
+* [Enrique J. Valerio G. (Autor)](https://github.com/Caballero73 "Enrique Valerio - Autor")
+* Sitio de pruebas https://caballero73.github.io/animaciones-web/.
